@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+.burgerInfo {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 0;
+}
+
+.col {
+    vertical-align: top;
+    font-size: 16px;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    padding: 15px;
+}
+
+h4 {
+    position: relative;
+    padding: 20px 150px 20px 70px;
+}
+
+h4::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    content: '';
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image_meat,
+.meat::after {
+    background-image: url('../img/ic-meat.png');
+    width: 50px;
+    height: 50px;
+
+}
+
+.image_cheese,
+.cheese::after {
+    background-image: url('../img/ic-cheese.png');
+    width: 50px;
+    height: 50px;
+}
+
+.image_salad,
+.salad::after {
+    background-image: url('../img/ic-salad.jpeg');
+    width: 50px;
+    height: 50px;
+}
+
+.image_bacon,
+.bacon::after {
+    background-image: url('../img/ic-bacon.png');
+    width: 50px;
+    height: 50px;
+}
+
+
+.item h4:nth-child(2)::after {
+    background-size: cover;
+}
+
+h4:nth-child(2) {
+    margin: 10px;
+}
+
+.item {
+    position: relative;
+    display: grid;
+}
+
+.counter {
+    position: absolute;
+    top: 18px;
+    right: 0;
+}
+
+.counter span {
+    font-size: 25px;
+    margin-right: 5px;
+    color: orange;
+}
+
+.counter button {
+    margin-left: 10px;
+    outline: none;
+}
+
+.counter .btn-remove {
+    border: none;
+    background: url('../img/ic-remove.png') 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    box-shadow: 4px 4px 2px 0 rgba(50, 50, 50, 0.75);
+}
+
+.counter .btn-add {
+    border: none;
+    background: url('../img/ic-add.png') 0 0 no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px 0 rgba(50, 50, 50, 0.75);
+    width: 30px;
+    height: 30px;
+}
+
+.btn-remove:active,
+.btn-add:active {
+
+    box-shadow: 0 1px #666;
+    transform: translateY(4px);
+}
+
+.hidden {
+    display: none;
+}
+
+
+.info {
+    height: 500px;
+}
